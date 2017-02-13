@@ -194,7 +194,7 @@ var environment = {
 /***/ 606:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "h1 {\n  background-color: red; }\n"
 
 /***/ }),
 
