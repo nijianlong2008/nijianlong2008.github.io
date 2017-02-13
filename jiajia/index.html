@@ -1,14 +1,40 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang=en>
 <head>
-  <meta charset="utf-8">
-  <title>Jiajia</title>
-  <base href="jiajia">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.bundle.css" rel="stylesheet"/></head>
+	<!--
+	
+	 CSS3 Card Games Example
+	 http://gamedesign.cc/html5games/css3-matching-game/
+	 
+	 This is an example game for my coming book.
+	 
+	 Copyright 2010, Thomas Seng Hin Mak
+	 makzan@gmail.com
+	   
+	 All Right Reserved.
+	 
+	-->
+	
+	<meta charset=utf-8>
+	<title>jia jia</title>
+	<link rel="stylesheet" href="css/matchgame.css" />
+	
+</head>
 <body>
-  <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+	<header>
+		<h1>对对碰</h1>
+	</header>
+	
+	<section id="game">
+		<div id="cards">			
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div> <!-- .card -->						
+		</div> <!-- #cards -->
+	</section> <!-- #game -->
+
+<script src="js/jquery-1.6.min.js"></script>
+<script src="js/html5games.matchgame.js"></script>
+</body>
 </html>
