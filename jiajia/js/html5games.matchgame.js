@@ -48,7 +48,9 @@ $(function(){
 		$(this).attr("data-pattern",pattern);
 						
 		$(this).click(selectCard);				
-	});	
+	});
+
+	$('#audio')[0].play();
 });
 
 function selectCard() {
