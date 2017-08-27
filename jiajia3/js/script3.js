@@ -22,6 +22,7 @@ var Qixi = function () {
         },
         snowflakeURl: ["http://img.mukewang.com/55adde120001d34e00410041.png", "http://img.mukewang.com/55adde2a0001a91d00410041.png", "http://img.mukewang.com/55adde5500013b2500400041.png", "http://img.mukewang.com/55adde62000161c100410041.png", "http://img.mukewang.com/55adde7f0001433000410041.png", "http://img.mukewang.com/55addee7000117b500400041.png"]
     };
+
     var debug = 0;
     if (debug) {
         $.each(confi.setTime, function (key, val) {
@@ -335,6 +336,14 @@ var Qixi = function () {
             }
         }
     }
+
+    $('#audio').one('click', function(){
+        var audio1 = Hmlt5Audio(confi.audio.playURl);
+        audio1.end(function () {
+            Hmlt5Audio(confi.audio.cycleURL, true)
+        })
+    });
+
 };
 $(function () {
     Qixi()
